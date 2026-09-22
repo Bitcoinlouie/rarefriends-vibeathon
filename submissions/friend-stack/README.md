@@ -14,7 +14,7 @@ A physics tower stacker where every piece is one of your own Rare Friend's on-ch
 Connect your wallet and choose your hardwired Generations Friend. The game reads that Friend's canonical sprite frames through FriendSDK and turns every distinct pose into a rigid body. It also reads the Friend's generation: in Free Stack, higher generations get more "land" (a wider platform, following the docs' "promotion gives your Rare Friend more land"), and the platform's material shows the generation, from Stone at Gen 6 to Gold at Gen 1.
 
 **Source code**
-[GitHub repository](https://github.com/Bitcoinlouie/friend-stack/tree/f829585a108292d058c27e99a7be52c53c1a1625/games/friend-stack) · FriendSDK v0.1.2, with [planck.js](https://github.com/piqnt/planck.js) (Box2D) for physics. The repository is a fork of FriendSDK; the game is in `games/friend-stack`.
+[GitHub repository](https://github.com/Bitcoinlouie/friend-stack/tree/e23217c7c02c4f2fa536ab3a45df8968c5523389/games/friend-stack) · FriendSDK v0.1.2, with [planck.js](https://github.com/piqnt/planck.js) (Box2D) for physics. The repository is a fork of FriendSDK; the game is in `games/friend-stack`.
 
 **Playable demo / how to run**
 Public preview: **https://bitcoinlouie.github.io/friend-stack/**
@@ -26,7 +26,7 @@ To run locally with Node.js 22+:
 ```sh
 git clone https://github.com/Bitcoinlouie/friend-stack.git
 cd friend-stack
-git checkout f829585a108292d058c27e99a7be52c53c1a1625
+git checkout e23217c7c02c4f2fa536ab3a45df8968c5523389
 npm ci
 (cd games/friend-stack && npm ci)
 npm run dev:game -- games/friend-stack
@@ -65,7 +65,7 @@ Everything is simulated and labelled in game. The SDK preview wallet holds a fix
 - **Coats:** each crate reveals a coat that restyles every piece. Keep it, or redeem it for its fixed RF value with no expiry. Holding a Chalk, Brick and Neon Coat at once unlocks the cosmetic Prism Coat, which has no RF value.
 - **Where the RF goes:** under the SDK v0.1.2 `ChanceGame` contract, crate payments fund the game's prize pool, and the 12% edge stays with the developer who funds the prizes. Crate spending burns no RF. The game's protocol link is generation-based land: a wider Free Stack platform per generation, with nudges that show each promotion's real protocol price (for example 9,000 RF for Gen 3 → Gen 2, half burned and half to active NFT rewards).
 
-A Session spend panel in the Crates menu shows RF spent, crates opened, coat value received and the prize pool's result at mainnet scale. [Full rules, odds and economy notes](https://github.com/Bitcoinlouie/friend-stack/blob/f829585a108292d058c27e99a7be52c53c1a1625/games/friend-stack/README.md#the-rarefriends-loop-simulated).
+A Session spend panel in the Crates menu shows RF spent, crates opened, coat value received and the prize pool's result at mainnet scale. [Full rules, odds and economy notes](https://github.com/Bitcoinlouie/friend-stack/blob/e23217c7c02c4f2fa536ab3a45df8968c5523389/games/friend-stack/README.md#the-rarefriends-loop-simulated).
 
 **What have you tested?**
 - `npx friendsdk check games/friend-stack` and the game's TypeScript typecheck pass.
@@ -81,7 +81,7 @@ A Session spend panel in the Crates menu shows RF spent, crates opened, coat val
 - No live token spending, trading, wearable NFTs or creator fees.
 
 **Credits**
-- Friend artwork: canonical Rare Friends Generations sprites via FriendSDK ([NOTICE](https://github.com/Bitcoinlouie/friend-stack/blob/f829585a108292d058c27e99a7be52c53c1a1625/NOTICE.md)).
+- Friend artwork: canonical Rare Friends Generations sprites via FriendSDK ([NOTICE](https://github.com/Bitcoinlouie/friend-stack/blob/e23217c7c02c4f2fa536ab3a45df8968c5523389/NOTICE.md)).
 - Sounds: FriendSDK sound kit, plus landing thuds synthesised in code.
 - Physics: [planck.js](https://github.com/piqnt/planck.js) (MIT).
 - Everything else (platform, crate, parachute, crown, coats, sky, tower card) is drawn in code for this game. Screenshots below were captured with the SDK test harness's sample Friend #7730.
